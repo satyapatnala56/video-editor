@@ -1,11 +1,15 @@
-import React, {useRef} from 'react'
+import React, {useRef, useContext} from 'react'
 import styles from './Video.module.css'
+import CentralContext from '../../Context/central'
 
 const Video = (props) => {
 
   const videoRef = useRef(null)
 
+  const {setDuration} = useContext(CentralContext)
+
   const handleMetaData = e => {
+    setDuration(videoRef.current.duration);
     console.log(videoRef.current.duration);
   }
   

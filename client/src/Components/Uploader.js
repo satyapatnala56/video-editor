@@ -1,12 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 import styles from "./Uploader.module.css";
 import Video from "./Utils/Video";
+import CentralContext from "../Context/central";
 
 const Uploader = (props) => {
   const ref = useRef(null);
+  const context = useContext(CentralContext);
 
   const setVideoHandler = () => {
-    props.setVideo(ref.current.files[0]);
+    context.setVideo(ref.current.files[0]);
   };
 
   const clickHandler = (e) => {
@@ -15,7 +17,7 @@ const Uploader = (props) => {
 
   return (
     <React.Fragment>
-      {props.video === null ? (
+      {context.video === null ? (
         <form className={styles.form} onClick={clickHandler}>
           <input
             type="file"
@@ -26,7 +28,7 @@ const Uploader = (props) => {
           Please upload a video before continuing
         </form>
       ) : (
-        <Video video={props.video} />
+        <Video video={context.video} />
       )}
     </React.Fragment>
   );

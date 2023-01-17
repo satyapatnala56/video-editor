@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <NavBar />
-      <Trim/>
     </div>
   );
 };
