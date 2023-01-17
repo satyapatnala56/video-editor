@@ -1,0 +1,28 @@
+.side{
+    height: 100%;
+    width: 20%;
+    margin: 5% 10px;
+}
+.list{
+    list-style: none;
+    height: 500px;
+    width: 100%;
+    margin: 15px 20px;
+    background-color: white;
+    box-shadow: 2px 8px 4px 0 rgba(0,0,0,0.2);
+}
+.list div li{
+    margin: 10px 0;
+    padding: 10px;
+    color: grey;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.active li{
+    background-color: black;
+    color: white !important;
+}
+.con{
+    display: flex;
+}

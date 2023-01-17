@@ -1,0 +1,23 @@
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    padding: 20px;
+    width: fit-content;
+    transition: 0.3s ease-out;
+    letter-spacing: 1px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin: 0 5px;
+    transition: 0.3s ease-out;
+}
+.link:hover{
+    text-shadow: 0 10px 10px rgb(0, 0, 0);
+    transition: all 0.3s ease-in-out;
+}

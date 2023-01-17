@@ -1,0 +1,21 @@
+.desc{
+    margin: 10px 0;
+    color: grey;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.options{
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid grey;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+}
+.option input{
+    margin: 5px 0;
+}
